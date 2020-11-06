@@ -1,0 +1,7 @@
+.btn-outline-secondary {
+    background-color: #038ba0;
+    color: rgb(41, 41, 41);
+}
+.btn-outline-secondary:hover {
+    background-color: #035a68;
+}
