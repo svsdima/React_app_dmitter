@@ -29,7 +29,7 @@ export default class PostListItem extends Component {
 
     /* Создаёт вёрстку на сайте */
     render() {
-        const {label} = this.props;
+        const {label, onDelete} = this.props;
         const {important, like} = this.state;
         let classNames = 'app-list-item d-flex justify-content-between';
         if (important) {
@@ -55,7 +55,8 @@ export default class PostListItem extends Component {
                     </button>
                     <button 
                     type="button" 
-                    className="btn-trash btn-sm">
+                    className="btn-trash btn-sm"
+                    onClick={onDelete}>
                         {/* Класс <i></i> берём из Font Awesome (BootstrapCDN) */}
                         <i className="fa fa-trash"></i>
                     </button>
